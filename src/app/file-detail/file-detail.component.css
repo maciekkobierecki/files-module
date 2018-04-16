@@ -1,0 +1,22 @@
+.file-detail {
+    background-color: #bcd1da;
+    padding:5px;
+    margin-bottom: 4px;
+    
+}
+
+.fileName{
+    background-color:#aaaaaa;
+    height:30px;
+    width:100px;
+    
+    
+    
+}
+
+.fileDescription{
+}
+
+.fileDescriptionInput {
+    background-color: aqua;
+}
