@@ -1,7 +1,8 @@
 .file-detail {
-    background-color: #bcd1da;
+    background-color: #bcd3da;
     padding:5px;
     margin-bottom: 4px;
+    min-height: 40px;
     
 }
 
@@ -9,6 +10,7 @@
     background-color:#aaaaaa;
     height:30px;
     width:100px;
+    
     
     
     

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { File } from '../model/file';
-import FILES from '../model/files-mock';
+import { FileService } from '../file.service';
+import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'app-files',
@@ -8,10 +9,16 @@ import FILES from '../model/files-mock';
   styleUrls: ['./files.component.css']
 })
 export class FilesComponent implements OnInit {
-  files=FILES;
-  constructor() { }
+  files: File[];
 
+  constructor(private fileService: FileService) { }
+
+  getFiles(): void {
+    this.fileService.getFiles().subscribe(files => this.files=files);
+  }
   ngOnInit() {
+    this.getFiles();
   }
 
 }
+ 
